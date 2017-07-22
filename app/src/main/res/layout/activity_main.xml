@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#383b3d"
+    tools:context="com.example.phoenix.contactslistview.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout3"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.6">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/layout2"
+                android:id="@+id/ename"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:hint="Enter Name"
+                android:textColorHint="#FFFFFF"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/layout2"
+                android:id="@+id/enumber"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="15dp"
+                android:hint="Enter phone number"
+                android:textColorHint="#FFFFFF"
+                android:inputType="phone"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:id="@+id/add"
+            android:text="+Add"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout2"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/list"></ListView>
+
+</LinearLayout>
